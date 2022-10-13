@@ -10,6 +10,8 @@ public class Pizza {
     boolean isTopingAdded = false;
     boolean addTakeAway = false;
 
+    boolean isBiiled = false;
+
     public Pizza(Boolean isVeg){
         this.isVeg = isVeg;
 
@@ -62,7 +64,13 @@ public class Pizza {
 
     public String getBill(){
         // your code goes here
-        bill = bill + "Total Price: " + price + "\n";
-        return this.bill;
+        if(isBiiled){
+            return "";
+        }
+        else {
+            bill = bill + "Total Price: " + price + "\n";
+            isBiiled = true;
+            return this.bill;
+        }
     }
 }
