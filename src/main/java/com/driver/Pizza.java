@@ -64,13 +64,12 @@ public class Pizza {
 
     public String getBill(){
         // your code goes here
-        if(isBiiled){
-            return "";
-        }
-        else {
+        if (!isBiiled){
             bill = bill + "Total Price: " + price + "\n";
             isBiiled = true;
-            return this.bill;
         }
+
+
+        return this.bill;
     }
 }
