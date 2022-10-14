@@ -22,7 +22,7 @@ public class Pizza {
             price = price + 300;
         }
         else{
-            bill = bill + "Base Price Of The Pizza: 400 \n";
+            bill = bill + "Base Price Of The Pizza: 400\n";
             price = price + 400;
         }
     }
